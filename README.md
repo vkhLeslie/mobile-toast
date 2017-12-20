@@ -15,8 +15,10 @@ webpack、RequireJS、SeaJS等
 
 ``` javascript
 // 完整引入
-const loading = require('loading.js')
-vue.use(loading)
+const toast = require('mobile-toast.js')
+import 'mobile-toast/lib/mobile-toast.less';//参考使用 https://github.com/vkhLeslie/mobile-toast
+import toast from 'mobile-toast';
+vue.use(toast)
 ```
 
 
