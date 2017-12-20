@@ -11,21 +11,18 @@ var showToast = false, // 存储toast显示状态
     toastVM = null, // 存储toast vm
     loadNode = null; // 存储loading节点元素
 
-var opt = { //loading 总配置
-    defaultType: 'bottom',
-    duration: '2500',
-    wordWrap: false
-};
 
-
-for (var property in options) {
-    opt[property] = options[property];
-}
-Toast = {
+Toast.$toast = function (tips, type,options) {
+    var opt = { //提示 总配置
+        defaultType: 'bottom',
+        duration: '2500',
+        wordWrap: false
+    };
     
-}
-var $toast = function (tips, type) {
-
+    for (var property in options) {
+        opt[property] = options[property];
+    }
+    
     var curType = type ? type : opt.defaultType;
     var wordWrap = opt.wordWrap ? 'mobile-word-wrap' : '';
     var style = opt.width ? 'style="width: ' + opt.width + '"' : '';
@@ -59,12 +56,12 @@ var $toast = function (tips, type) {
     }, opt.duration)
 };
 ['bottom', 'center', 'top'].forEach(function (type) {
-   $toast[type] = function (tips) {
-        return $toast(tips, type)
+    Toast.$toast[type] = function (tips) {
+        return Toast.$toast(tips, type)
     }
 });
 
-var $loading = function (tips, type) {
+Toast.$loading = function (tips, type) {
     if (type == 'close') {
         loadNode.show = showLoad = false;
     } else {
@@ -89,8 +86,8 @@ var $loading = function (tips, type) {
 };
 
 ['open', 'close'].forEach(function (type) {
-    $loading[type] = function (tips) {
-        return $loading(tips, type)
+    Toast.$loading[type] = function (tips) {
+        return Toast.$loading(tips, type)
     }
 });
 
