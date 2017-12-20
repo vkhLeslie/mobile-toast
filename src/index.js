@@ -1,8 +1,8 @@
 /**
  * @desc webpack打包入口文件
  */
-const arrayEqual = require('./loading')
+const mobileToast = require('./mobile-toast')
 
 module.exports = {
-    arrayEqual
+    mobileToast
 }
