@@ -1,6 +1,14 @@
 
 ;(function() {
     function init(cfg) {
+        //加载不可见mask
+        body = document.querySelector('body');
+       
+        var loadingMask = document.createElement('div');
+        loadingMask.className = 'dagger-loading';
+        // loadingDom.style.display = 'none';
+        body.appendChild(loadingMask);
+        //加载不可见mask
         if (window.loading) {
             loading.refresh(cfg);
         } else {
