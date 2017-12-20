@@ -18,7 +18,8 @@ webpack、RequireJS、SeaJS等
 const toast = require('mobile-toast/src/mobile-toast.js')
 或
 const toast = require('mobile-toast/min/mobile-toast.min.js')
-import 'mobile-toast/lib/mobile-toast.less';//参考使用 https://github.com/vkhLeslie/mobile-toast
+import 'mobile-toast/lib/mobile-toast.less';
+$ //参考使用 https://github.com/vkhLeslie/mobile-toast
 import toast from 'mobile-toast';
 vue.use(toast)
 ```
