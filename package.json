@@ -1,0 +1,36 @@
+{
+  "name": "mobile-toast",
+  "version": "1.0.0",
+  "description": "移动请求loading插件",
+  "main": "index.js",
+  "maintainers": [
+    {
+      "name": "chenxingwu",
+      "email": "912751280@qq.com"
+    }
+  ],
+  "scripts": {
+    "build": "node script/build.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vkhLeslie/mobile-toast.git"
+  },
+  "author": "peter",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "chalk": "^2.3.0",
+    "copy": "^0.3.1",
+    "ora": "^1.3.0",
+    "rimraf": "^2.6.2",
+    "webpack": "^3.8.1"
+  },
+  "bugs": {
+    "url": "https://github.com/vkhLeslie/mobile-toast/issues"
+  },
+  "homepage": "https://github.com/vkhLeslie/mobile-toast#readme"
+}
