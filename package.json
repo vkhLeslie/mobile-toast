@@ -1,6 +1,6 @@
 {
   "name": "mobile-toast",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "移动请求loading插件",
   "main": "index.js",
   "maintainers": [
