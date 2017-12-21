@@ -56,7 +56,7 @@ function Toast(options) {
         }, opt.duration)
     };
     ['bottom', 'center', 'top'].forEach(function (type) {
-        Toast.$toast[type] = function (tips) {
+        Toast.prototype.$toast[type] = function (tips) {
             return Toast.$toast(tips, type)
         }
     });
